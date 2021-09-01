@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "cpppy"
+version = "1.0.0"
+description = "Implementing C++ Semantics in Python"
+authors = ["Tamir Bahar"]
+license = "MIT"
+
+packages = [
+    { include = "cpp.py", from = "lib" },
+]
+
+readme = "README.md"
+repository = "https://github.com/tmr232/cpppy"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
